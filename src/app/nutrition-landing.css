@@ -1,0 +1,37 @@
+.nutrition-page,.nutrition-page *{box-sizing:border-box}
+.nutrition-page{background:#fff;color:#27272b;font-family:var(--font-body),Arial,Helvetica,sans-serif;width:100%;-webkit-font-smoothing:antialiased}
+.nutrition-page p{line-height:1.8}
+.nutrition-page a{color:inherit;text-decoration:none}
+.nutrition-page a:focus-visible,.nutrition-page summary:focus-visible{outline:3px solid #666;outline-offset:6px}
+.nutrition-skip{position:fixed;left:20px;top:-100px;z-index:100;background:#fff;border:1px solid #ddd;padding:14px;border-radius:12px}
+.nutrition-skip:focus{top:20px}
+.nutrition-features{padding:110px max(24px,calc((100% - 1120px)/2));background:#f6f6f7;scroll-margin-top:20px}
+.nutrition-section-heading{max-width:650px;margin-bottom:45px}
+.nutrition-section-heading>span,.nutrition-overline{font-size:11px;letter-spacing:2.1px;color:#81818c;font-weight:600;display:block;margin-bottom:20px}
+.nutrition-section-heading h2,.nutrition-how h2,.nutrition-faq h2{font-size:clamp(32px,4vw,48px);letter-spacing:-1.8px;line-height:1.13;font-weight:600;margin:0 0 22px}
+.nutrition-section-heading p{font-size:16px;color:#72727b;max-width:540px}
+.nutrition-features-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.nutrition-features-grid article{background:#fff;border:1px solid #e5e5e8;border-radius:24px;padding:36px}
+.nutrition-feature-number{font-size:12px;color:#9898a1;letter-spacing:1.5px}
+.nutrition-features-grid h3{font-size:25px;letter-spacing:-.8px;line-height:1.25;font-weight:600;margin:23px 0 15px;max-width:340px}
+.nutrition-features-grid p{font-size:15px;color:#74747e;margin:0}
+.nutrition-feature-detail{display:block;font-size:12px;color:#545460;border-top:1px solid #ebebef;padding-top:20px;margin-top:27px}
+.nutrition-how{max-width:1120px;margin:0 auto;padding:110px 24px;display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.nutrition-how h2{font-size:58px;line-height:1.12}
+.nutrition-how ol{margin:0;padding:0;list-style:none;counter-reset:step}
+.nutrition-how li{counter-increment:step;position:relative;padding:0 0 25px 47px;margin-bottom:25px;border-bottom:1px solid #e7e7eb}
+.nutrition-how li:before{content:"0" counter(step);position:absolute;left:0;top:4px;color:#9797a1;font-size:11px}
+.nutrition-how strong{font-size:20px;letter-spacing:-.5px;font-weight:600}
+.nutrition-how p{font-size:15px;color:#787882;margin:13px 0 0}
+.nutrition-faq{max-width:830px;margin:auto;padding:25px 24px 95px}
+.nutrition-faq h2{font-size:35px;margin-bottom:33px}
+.nutrition-faq details{padding:24px 0;border-bottom:1px solid #e7e7eb}
+.nutrition-faq summary{font-size:16px;font-weight:500;cursor:pointer;list-style:none;padding-right:30px;position:relative}
+.nutrition-faq summary::-webkit-details-marker{display:none}
+.nutrition-faq summary:after{content:"+";position:absolute;right:0;font-size:21px;font-weight:400;color:#8a8a96}
+.nutrition-faq details[open] summary:after{content:"−"}
+.nutrition-faq p{font-size:15px;color:#787882;margin:16px 0 0}
+.nutrition-footer{border-top:1px solid #e7e7eb;padding:35px max(24px,calc((100% - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:20px}
+.nutrition-footer a:first-child{font-size:27px;font-weight:700;letter-spacing:-1.5px}
+.nutrition-footer span,.nutrition-footer a:last-child{font-size:12px;color:#83838d}
+@media(max-width:767px){.nutrition-features{padding-top:70px;padding-bottom:65px}.nutrition-features-grid{grid-template-columns:1fr;gap:16px}.nutrition-features-grid article{padding:27px}.nutrition-features-grid h3{font-size:24px}.nutrition-features-grid p{font-size:14px}.nutrition-how{grid-template-columns:1fr;padding-top:70px;padding-bottom:40px;gap:28px}.nutrition-how h2{font-size:44px}.nutrition-faq{padding-bottom:70px}.nutrition-faq h2{font-size:31px}.nutrition-faq summary{font-size:15px}.nutrition-footer{align-items:flex-start;flex-direction:column;gap:15px}}
